@@ -1,0 +1,62 @@
+{
+	"extends": ["eslint:recommended", "prettier"],
+	"plugins": ["prettier", "import"],
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"rules": {
+		"linebreak-style": 0,
+		"no-underscore-dangle": 0,
+		"import/imports-first": ["error", "absolute-first"],
+		"import/newline-after-import": "error",
+		//"prettier/prettier": "error",
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"no-unused-expressions": [
+			"error",
+			{
+				"allowTernary": true,
+				"allowShortCircuit": true
+			}
+		]
+	},
+	"settings": {},
+	"globals": {
+		"alert": true,
+		"confirm": true,
+		"window": true,
+		"document": true,
+		"localStorage": true,
+		"FormData": true,
+		"FileReader": true,
+		"Blob": true,
+		"navigator": true,
+		"IS_NOT_PRODUCTION": true,
+		"HB_ACTIVE": true,
+		"LAYOUT_ACTIVE": true,
+		"GENIEE_ACTIVE": true,
+		"SPA_ACTIVE": true,
+		"APTAG_ACTIVE": true,
+		"INNOVATIVE_ADS_ACTIVE": true,
+		"USER_TRACKING": true,
+		"ADPTAG_ACTIVE": true,
+		"GDPR_ACTIVE": true,
+		"INCONTENT_ACTIVE": true,
+		"AP_LITE_ACTIVE": true,
+		"PNP_REFRESH_ACTIVE": true,
+		"GA_ANALYTICS_ACTIVE": true,
+		"SEPARATE_PREBID_DISABLED": true,
+		"SITE_ID": true,
+		"__ADPUSHUP_CONFIG__": true,
+		"describe": true,
+		"it": true,
+		"expect": true
+	}
+}
